@@ -20,21 +20,7 @@ class Toggles extends StatelessWidget {
           toggle: appModel.showHints,
           setFunc: appModel.setShowHints,
         ),
-        Toggle(
-          'Allow Undo/Redo',
-          toggle: appModel.allowUndoRedo,
-          setFunc: appModel.setAllowUndoRedo,
-        ),
-        Toggle(
-          'Show Move History',
-          toggle: appModel.showMoveHistory,
-          setFunc: appModel.setShowMoveHistory,
-        ),
-        Toggle(
-          'Flip Board For Black',
-          toggle: appModel.flip,
-          setFunc: appModel.setFlipBoard,
-        ),
+
         Platform.isAndroid
             ? Toggle(
                 'Sound Enabled',

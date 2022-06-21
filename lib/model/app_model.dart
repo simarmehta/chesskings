@@ -12,7 +12,6 @@ import 'app_themes.dart';
 
 const TIMER_ACCURACY_MS = 100;
 const PIECE_THEMES = [
-  'Classic',
   'Angular',
 
 ];
@@ -242,12 +241,12 @@ class AppModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void setAllowUndoRedo(bool allow) async {
-    final prefs = await SharedPreferences.getInstance();
-    this.allowUndoRedo = allow;
-    prefs.setBool('allowUndoRedo', allow);
-    notifyListeners();
-  }
+  // void setAllowUndoRedo(bool allow) async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   this.allowUndoRedo = allow;
+  //   prefs.setBool('allowUndoRedo', allow);
+  //   notifyListeners();
+  // }
 
   void loadSharedPrefs() async {
     final prefs = await SharedPreferences.getInstance();
