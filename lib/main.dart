@@ -13,7 +13,7 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => AppModel(),
-      child: EnPassantApp(),
+      child: ChessKingsApp(),
     ),
   );
   _loadFlameAssets();
@@ -32,7 +32,7 @@ void _loadFlameAssets() async {
   await Flame.images.loadAll(pieceImages);
 }
 
-class EnPassantApp extends StatelessWidget {
+class ChessKingsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
